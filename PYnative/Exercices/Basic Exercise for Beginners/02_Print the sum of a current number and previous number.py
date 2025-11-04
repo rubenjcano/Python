@@ -67,16 +67,6 @@ def func5(num: int, current_num: int = 0, previous_num: int = 0):
     func5(num, current_num + 1, current_num)
 
 
-# 6
-def func6(num: int, previous_num: int = 0):
-    for current_num in range(num):
-        sum_val = current_num + previous_num
-        print(
-            f"Current Number {current_num} Previous Number {previous_num} Sum: {sum_val}"
-        )
-        previous_num = current_num
-
-
 num = 10
 
 
@@ -92,4 +82,3 @@ versions(func2, "2. Improved version")
 versions(func3, "3. Enumerate with a list")
 versions(func4, "4. Zip to pair current and previous nums")
 versions(func5, "5. Recursion")
-versions(func6, "6")
